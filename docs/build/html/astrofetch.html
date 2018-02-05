@@ -1,0 +1,251 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>astrofetch package &#8212; astrofetch 0.1 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="astrofetch-package">
+<h1>astrofetch package<a class="headerlink" href="#astrofetch-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-astrofetch.AstroFetch">
+<span id="astrofetch-astrofetch-module"></span><h2>astrofetch.AstroFetch module<a class="headerlink" href="#module-astrofetch.AstroFetch" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="astrofetch.AstroFetch.AstroFetch">
+<em class="property">class </em><code class="descclassname">astrofetch.AstroFetch.</code><code class="descname">AstroFetch</code><span class="sig-paren">(</span><em>source</em>, <em>sections</em><span class="sig-paren">)</span><a class="headerlink" href="#astrofetch.AstroFetch.AstroFetch" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<dl class="method">
+<dt id="astrofetch.AstroFetch.AstroFetch.access_path">
+<code class="descname">access_path</code><span class="sig-paren">(</span><em>path</em><span class="sig-paren">)</span><a class="headerlink" href="#astrofetch.AstroFetch.AstroFetch.access_path" title="Permalink to this definition">¶</a></dt>
+<dd><p>Verifies if the current proccess is in the path desired and if not changes the current working directory to it</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="astrofetch.AstroFetch.AstroFetch.fetch">
+<code class="descname">fetch</code><span class="sig-paren">(</span><em>path</em><span class="sig-paren">)</span><a class="headerlink" href="#astrofetch.AstroFetch.AstroFetch.fetch" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fetch the data requested from the resource available.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="astrofetch.AstroFetch.AstroFetch.print_json">
+<em class="property">static </em><code class="descname">print_json</code><span class="sig-paren">(</span><em>data</em>, <em>log</em><span class="sig-paren">)</span><a class="headerlink" href="#astrofetch.AstroFetch.AstroFetch.print_json" title="Permalink to this definition">¶</a></dt>
+<dd><p>Writes a dictionary into a JSON file.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>data</strong> (<em>dict</em>) – Data dictionary to be printed.</li>
+<li><strong>log</strong> (<em>str</em>) – Filename of the output file.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="astrofetch.AstroFetch.AstroFetch.print_logs">
+<code class="descname">print_logs</code><span class="sig-paren">(</span><em>path</em><span class="sig-paren">)</span><a class="headerlink" href="#astrofetch.AstroFetch.AstroFetch.print_logs" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="astrofetch.AstroFetch.AstroFetch.print_results">
+<code class="descname">print_results</code><span class="sig-paren">(</span><em>path</em><span class="sig-paren">)</span><a class="headerlink" href="#astrofetch.AstroFetch.AstroFetch.print_results" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="astrofetch.AstroFetch.AstroFetch.scrap">
+<code class="descname">scrap</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#astrofetch.AstroFetch.AstroFetch.scrap" title="Permalink to this definition">¶</a></dt>
+<dd><p>Scrap the information out of the resource.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="astrofetch.AstroFetch.AstroFetch.set_sections">
+<code class="descname">set_sections</code><span class="sig-paren">(</span><em>sections</em><span class="sig-paren">)</span><a class="headerlink" href="#astrofetch.AstroFetch.AstroFetch.set_sections" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if the sections were passed as a valid list.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>sections</strong> (<em>list</em>) – The data structure that contains the sections info.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="astrofetch.AstroFetch.AstroFetch.set_source">
+<code class="descname">set_source</code><span class="sig-paren">(</span><em>source</em><span class="sig-paren">)</span><a class="headerlink" href="#astrofetch.AstroFetch.AstroFetch.set_source" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if the sections were passed as a valid dict.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>source</strong> (<em>dict</em>) – The data structure that contains the sections info.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-astrofetch.CSSPathFetch">
+<span id="astrofetch-csspathfetch-module"></span><h2>astrofetch.CSSPathFetch module<a class="headerlink" href="#module-astrofetch.CSSPathFetch" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="astrofetch.CSSPathFetch.CSSPathFetch">
+<em class="property">class </em><code class="descclassname">astrofetch.CSSPathFetch.</code><code class="descname">CSSPathFetch</code><a class="headerlink" href="#astrofetch.CSSPathFetch.CSSPathFetch" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#astrofetch.Fetcher.Fetcher" title="astrofetch.Fetcher.Fetcher"><code class="xref py py-class docutils literal"><span class="pre">astrofetch.Fetcher.Fetcher</span></code></a></p>
+<dl class="method">
+<dt id="astrofetch.CSSPathFetch.CSSPathFetch.fetch">
+<code class="descname">fetch</code><span class="sig-paren">(</span><em>source</em><span class="sig-paren">)</span><a class="headerlink" href="#astrofetch.CSSPathFetch.CSSPathFetch.fetch" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="astrofetch.CSSPathFetch.CSSPathFetch.scrap">
+<code class="descname">scrap</code><span class="sig-paren">(</span><em>section</em><span class="sig-paren">)</span><a class="headerlink" href="#astrofetch.CSSPathFetch.CSSPathFetch.scrap" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-astrofetch.Fetcher">
+<span id="astrofetch-fetcher-module"></span><h2>astrofetch.Fetcher module<a class="headerlink" href="#module-astrofetch.Fetcher" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="astrofetch.Fetcher.Fetcher">
+<em class="property">class </em><code class="descclassname">astrofetch.Fetcher.</code><code class="descname">Fetcher</code><a class="headerlink" href="#astrofetch.Fetcher.Fetcher" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">abc.ABC</span></code></p>
+<dl class="method">
+<dt id="astrofetch.Fetcher.Fetcher.fetch">
+<code class="descname">fetch</code><span class="sig-paren">(</span><em>source</em><span class="sig-paren">)</span><a class="headerlink" href="#astrofetch.Fetcher.Fetcher.fetch" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="astrofetch.Fetcher.Fetcher.scrap">
+<code class="descname">scrap</code><span class="sig-paren">(</span><em>section</em><span class="sig-paren">)</span><a class="headerlink" href="#astrofetch.Fetcher.Fetcher.scrap" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-astrofetch.XPathFetch">
+<span id="astrofetch-xpathfetch-module"></span><h2>astrofetch.XPathFetch module<a class="headerlink" href="#module-astrofetch.XPathFetch" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="astrofetch.XPathFetch.XPathFetch">
+<em class="property">class </em><code class="descclassname">astrofetch.XPathFetch.</code><code class="descname">XPathFetch</code><span class="sig-paren">(</span><em>url</em><span class="sig-paren">)</span><a class="headerlink" href="#astrofetch.XPathFetch.XPathFetch" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#astrofetch.Fetcher.Fetcher" title="astrofetch.Fetcher.Fetcher"><code class="xref py py-class docutils literal"><span class="pre">astrofetch.Fetcher.Fetcher</span></code></a></p>
+<dl class="method">
+<dt id="astrofetch.XPathFetch.XPathFetch.fetch">
+<code class="descname">fetch</code><span class="sig-paren">(</span><em>source</em><span class="sig-paren">)</span><a class="headerlink" href="#astrofetch.XPathFetch.XPathFetch.fetch" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fetches the content of the provided URL and saves it locally.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>source</strong> (<em>str</em>) – URL of the source of the content to be downloaded.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="astrofetch.XPathFetch.XPathFetch.scrap">
+<code class="descname">scrap</code><span class="sig-paren">(</span><em>section</em><span class="sig-paren">)</span><a class="headerlink" href="#astrofetch.XPathFetch.XPathFetch.scrap" title="Permalink to this definition">¶</a></dt>
+<dd><p>Crawls the webpage and extracts the content associated with the elements desired.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>section</strong> (<em>dict</em>) – Dictionary with the tags of the information desired and it’s XPath notation path.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-astrofetch">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-astrofetch" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2018, Sander Salazar.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.6.6</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
+      
+      |
+      <a href="_sources/astrofetch.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
